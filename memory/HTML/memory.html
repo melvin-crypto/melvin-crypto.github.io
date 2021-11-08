@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html id="html" lang="fr">
+    <head>
+        <title>Memory</title>
+        <audio id="audio" src="../Images/dragonBall.mp3" loop="false"></audio>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href='../CSS/memory.css' >
+  <script type="text/javascript" src="../JS/JQuery 3.5.1.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+  <script>
+    $(
+        function()
+        {      
+          $('input:radio').click(ChangerDifficulte);  
+          $('#audioBoutton').click(musique);
+        }
+    );
+
+    
+</script>
+
+</head>
+ <body>
+
+  <div>
+	<div id="jeu">
+  <script src="../JS/memory.js"></script>
+
+</div>
+
+<div id="difficulte">
+
+  <p id="choix">Choix de difficulté</p>
+  <div>
+    
+  </div>
+  <form>
+    <input name="Difficulte" type="radio" value="Facile"><span>Facile</span>
+    <br>
+    <input name="Difficulte" type="radio" value="Moyen"><span>Moyen</span>
+    <br>
+    <input name="Difficulte" type="radio" value="Difficile"><span>Difficile</span>
+  
+    </form>
+
+    <br>
+    <p>
+      <label>Nombre de coups :</label>
+      <input id="totalCoup" type="text" size="1" disabled="disabled">
+    
+    <br> <br>
+      <label id="musique">Arreter la musique :</label>
+      <br>
+      <img id="audioBoutton" src="../../machineASous/IMAGES/dragonBall.png" alt="">
+      
+</p>
+
+
+</div>
+</div>
+
+</body>
+
+
+</html>
+

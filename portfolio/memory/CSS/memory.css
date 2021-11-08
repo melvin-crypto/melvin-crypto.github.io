@@ -1,0 +1,155 @@
+
+body{
+  background: url(../Images/namek.png) no-repeat center fixed; 
+  background-size: cover; /* affichage en grand */
+  margin: 20px;
+}
+
+.plateau {
+  max-width: 820px;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  animation-duration:4.5s;
+  animation-name: slidein;
+}
+
+/*Créer l'animation de l'apparition des cartes selon le choix de difficultés*/
+@keyframes slidein {
+  from {
+   float: left;
+    opacity: 0;
+    
+  }
+}
+
+.carte {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+  height: 126px;
+  width: 126px;
+}
+.derriere{
+
+  height: 126px;
+  width: 126px;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+.face {
+  height: 126px;
+  width: 126px;
+  position: absolute;
+  backface-visibility: hidden;
+  z-index: 2;
+  background: url('../Images/dragonBall2.png') no-repeat center center / contain;
+}
+
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+.egal .face {
+  opacity: 0;
+}
+
+#choix{
+  margin-left: 25px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Choix difficulté - Choix difficulté - Choix difficulté - Choix difficulté - Choix difficulté - Choix difficulté - Choix difficulté - Choix difficulté - Choix difficulté - 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#difficulte{
+  float: right;
+  margin-right: 470px;
+  border-width:10px;
+  border:solid black;
+  background-color: green;
+  font-weight: bold;
+ 
+}
+
+span, label,p{
+  color: blue;
+}
+
+#audioBoutton{
+  width:34px;
+ 
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Fin de Jeu - Fin de Jeu - Fin de Jeu - Fin de Jeu - Fin de Jeu - Fin de Jeu - Fin de Jeu - Fin de Jeu - Fin de Jeu - Fin de Jeu - Fin de Jeu - Fin de Jeu - 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.agrandir{
+  width: 100%;
+  height: 750px;
+  position: relative;
+  z-index: 1;
+  }
+  
+  #texte{
+  
+    position:absolute;
+    top:120px; 
+    width:1500px; 
+    height:400px;
+    z-index:2;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: underline aqua;
+    font-weight: bold;
+    color: black;
+  }
+  
+  #texte2{
+  
+    position:absolute;
+    top: 100px;
+    width:50px;
+    z-index:2;
+    margin-left: 590px;
+    font-weight: bold;
+    font-size:large;
+    text-decoration:none;
+    color: black;
+  
+  
+  }
+  
+  #texte2:hover{
+    color: #C0C0C0 ;
+    font-size:x-large;
+  }
+  
+  #texte3:hover{
+    color: #C0C0C0 ;
+    font-size:x-large;
+  }
+  
+  #texte3{
+  
+    position:absolute;
+    top: 100px;
+    width:400px;
+    z-index:2;
+    margin-left: 680px;
+    font-weight: bold;
+    font-size:large;
+  color: black;
+  text-decoration:none;
+  }
+
+

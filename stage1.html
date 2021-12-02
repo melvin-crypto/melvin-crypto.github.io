@@ -44,9 +44,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>PROJET ECOLE</p>
   </a>
 </nav>
-
-<body class="w3-light-grey">
-
   <!-- w3-content defines a container for fixed size centered content, 
   and is wrapped around the whole page content, except for the footer in this example -->
   <div class="w3-content" style="max-width:1400px">
@@ -61,16 +58,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-row">
   
   <!-- Blog entries -->
-  <div class="w3-col l8 s12">
+  <div style="padding-left: 50px;" class="w3-col l8 s12">
     <!-- Blog entry -->
     <div class="w3-card-4 w3-margin w3-white">
       <div class="w3-container">
-        <h3><b>Description de l'entreprise </b></h3>
+        <h3><b>Contexte </b></h3>
       </div>
       <div class="w3-container">
-        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        <div class="w3-row">
+        <p>L'entreprise Musicali est une entreprise de location d'instruments de musique. Elle est
+          composée de deux entrepreneurs, Monsieur Moquet et Monsieur Rocher. Elle a été créée
+          en 2020 pour donner suite à une extension de leur autre entreprise Playnotes qui repose sur
+          la mise en place de cours de musique pour les particuliers. <br> <br>
+          Comme de nombreux particuliers et professeurs ne possèdent pas forcément d'instruments,
+          ils ont eu l'idée de créer une entreprise tournée vers le leasing d'instruments de musique.
+          Leur local actuel est un espace de coworking, c'est-à-dire qu'il partage un même local avec
+          plusieurs autres <br> <br>
+          Comme ils ne sont que deux, ils s'occupent à la fois des commandes d'instruments, de leur
+          vente mais également du site et informent les clients en cas de besoin.
+          Lorsqu'un client commande un instrument, il se voit attribuer un contrat d'une durée choisie (
+          1 à 5 ans) et durant laquelle il règle une somme par mois calculée selon le prix total de l' instrument.
+              <div class="w3-row">
           <div class="w3-col m8 s12">
             <p><button onclick="document.getElementById('lirePlus').style.display='block'" class="w3-button w3-padding-large w3-white w3-border">Lire plus »</button></p>        
           </div>
@@ -81,12 +88,34 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <div class="w3-card-4 w3-margin w3-white">
       <div class="w3-container">
-        <h3><b>TITLE HEADING</b></h3>
+        <h3><b>Mission</b></h3>
       </div>
   
       <div class="w3-container">
-        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>  Mon projet durant ces 5 semaines était principalement de rajouter une condition
+          supplémentaire à l'utilisateur lui permettant de modifier son contrat à tout moment.
+          <br> <br>
+          Tout au long de mon projet, Monsieur Moquet m’a aidé dans la programmation de mes
+          fonctions. Il m’a formé à l’utilisation de woocommerce et de ses plugins comme wpform.
+          Il a également créé un site de test ou j’ai inclus mon répertoire afin de faire toutes les
+          modifications en sécurité. <br> <br>
+          Le site Musicali repose sur un contrat mensuel pour l’accès aux instruments musicaux.
+          Monsieur Moquet m’a expliqué le calcul des prix et leur application afin de programmer
+          correctement la fonction du calcul du nouveau loyer que l’utilisateur possédera.
+          Son intervention était donc à chaque réalisation et vérifiait avec un compte client si
+          l’affichage du nouveau calcul était bon. <br> <br>
+          Ma progression s’est faite en plusieurs étapes : <br> <br>
+          - initiation à woocommerce afin de savoir créer des comptes clients pour les tests,
+          créer des variables ACF pour stocker les valeurs ou encore la création d’une page
+          de formulaire à l’aide de woocommerce avant d’abandonner cette idée. <br> 
+           - utilisation de filezilla et de ses répertoires pour modifier la page du formulaire et celle
+          du contrat. <br> 
+           - calcul de la fonction coût de l’instrument et de la future mensualité afin de l’afficher
+          correctement dans la liste déroulante du formulaire. <br>
+           - récupération de toutes les données dans le mail, les données du site sur le contrat
+          (grâce aux variables ACF) et sur l’accueil du contrat de l’utilisateur. <br> <br>
+          Malgré tout, l'objectif demandé par monsieur Moquet à été réalisé parfaitement dans le
+          délai. <br> </p>
         <div class="w3-row">
           <div class="w3-col m8 s12">
             <p><button onclick="document.getElementById('lirePlus').style.display='block'" class="w3-button w3-padding-large w3-white w3-border">Lire plus »</button></p>        
@@ -99,11 +128,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- Blog entry -->
     <div class="w3-card-4 w3-margin w3-white">
       <div class="w3-container">
-        <h3><b>BLOG ENTRY</b></h3>
+        <h3><b>Conclusion</b></h3>
       </div>
       <div class="w3-container">
-        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p> 
+          Les nouveaux utilisateurs pourront donc profiter de l'ajout du bouton permettant la
+          modification de leur contrat afin de faciliter le travail de monsieur Moquet et Monsieur
+          Rocher. </p>
         <div class="w3-row">
           <div class="w3-col m8 s12">
             <p><button onclick="document.getElementById('lirePlus').style.display='block'" class="w3-button w3-padding-large w3-white w3-border">Lire plus »</button></p>          </div>
@@ -119,46 +150,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <span onclick="document.getElementById('lirePlus').style.display='none'" class="w3-button w3-display-topright w3-xlarge">x</span>
         <h1>Informations supplémentaires</h1>
       </div>
-     <p style="color: black;">L'entreprise Musicali est une entreprise de location d'instruments de musique. Elle est
-      composée de deux entrepreneurs, Monsieur Moquet et Monsieur Rocher. Elle a été créée
-      en 2020 pour donner suite à une extension de leur autre entreprise Playnotes qui repose sur
-      la mise en place de cours de musique pour les particuliers. <br> <br>
-      Comme de nombreux particuliers et professeurs ne possèdent pas forcément d'instruments,
-      ils ont eu l'idée de créer une entreprise tournée vers le leasing d'instruments de musique.
-      Leur local actuel est un espace de coworking, c'est-à-dire qu'il partage un même local avec
-      plusieurs autres <br> <br>
-      Comme ils ne sont que deux, ils s'occupent à la fois des commandes d'instruments, de leur
-      vente mais également du site et informent les clients en cas de besoin.
-      Lorsqu'un client commande un instrument, il se voit attribuer un contrat d'une durée choisie (
-      1 à 5 ans) et durant laquelle il règle une somme par mois calculée selon le prix total de l' instrument.
-      <br> <br>
-      Mon projet durant ces 5 semaines était principalement de rajouter une condition
-      supplémentaire à l'utilisateur lui permettant de modifier son contrat à tout moment.
-      <br> <br>
-      Tout au long de mon projet, Monsieur Moquet m’a aidé dans la programmation de mes
-      fonctions. Il m’a formé à l’utilisation de woocommerce et de ses plugins comme wpform.
-      Il a également créé un site de test ou j’ai inclus mon répertoire afin de faire toutes les
-      modifications en sécurité. <br> <br>
-      Le site Musicali repose sur un contrat mensuel pour l’accès aux instruments musicaux.
-      Monsieur Moquet m’a expliqué le calcul des prix et leur application afin de programmer
-      correctement la fonction du calcul du nouveau loyer que l’utilisateur possédera.
-      Son intervention était donc à chaque réalisation et vérifiait avec un compte client si
-      l’affichage du nouveau calcul était bon. <br> <br>
-      Ma progression s’est faite en plusieurs étapes : <br> <br>
-      - initiation à woocommerce afin de savoir créer des comptes clients pour les tests,
-      créer des variables ACF pour stocker les valeurs ou encore la création d’une page
-      de formulaire à l’aide de woocommerce avant d’abandonner cette idée. <br> 
-       - utilisation de filezilla et de ses répertoires pour modifier la page du formulaire et celle
-      du contrat. <br> 
-       - calcul de la fonction coût de l’instrument et de la future mensualité afin de l’afficher
-      correctement dans la liste déroulante du formulaire. <br>
-       - récupération de toutes les données dans le mail, les données du site sur le contrat
-      (grâce aux variables ACF) et sur l’accueil du contrat de l’utilisateur. <br> <br>
-      Malgré tout, l'objectif demandé par monsieur Moquet à été réalisé parfaitement dans le
-      délai. <br> 
-      Les nouveaux utilisateurs pourront donc profiter de l'ajout du bouton permettant la
-      modification de leur contrat afin de faciliter le travail de monsieur Moquet et Monsieur
-      Rocher. </p>
+   <br> <br>
+   
     </div>
   </div>
 

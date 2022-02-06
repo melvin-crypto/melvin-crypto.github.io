@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-<title>Stage 2</title>
+<title>Stage 1</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
+  
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
@@ -42,14 +44,166 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>PROJET ECOLE</p>
   </a>
 </nav>
+  <!-- w3-content defines a container for fixed size centered content, 
+  and is wrapped around the whole page content, except for the footer in this example -->
+  <div class="w3-content" style="max-width:1400px">
+  
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-32"> 
+    <h1><b>Mon Deuxième Stage</b></h1>
+    <p>Description de mon stage chez Roombâ</p>
+  </header>
+  
+  <!-- Grid -->
+  <div class="w3-row">
+  
+  <!-- Blog entries -->
+  <div style="padding-left: 50px;" class="w3-col l8 s12">
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <h3><b>Contexte </b></h3>
+      </div>
+      <div class="w3-container">
+        <p>L'entreprise Musicali est une entreprise de location d'instruments de musique. Elle est
+          composée de deux entrepreneurs, Monsieur Moquet et Monsieur Rocher. Elle a été créée
+          en 2020 pour donner suite à une extension de leur autre entreprise Playnotes qui repose sur
+          la mise en place de cours de musique pour les particuliers. <br> <br>
+          Comme de nombreux particuliers et professeurs ne possèdent pas forcément d'instruments,
+          ils ont eu l'idée de créer une entreprise tournée vers le leasing d'instruments de musique.
+          Leur local actuel est un espace de coworking, c'est-à-dire qu'il partage un même local avec
+          plusieurs autres <br> <br>
+          Comme ils ne sont que deux, ils s'occupent à la fois des commandes d'instruments, de leur
+          vente mais également du site et informent les clients en cas de besoin.
+          Lorsqu'un client commande un instrument, il se voit attribuer un contrat d'une durée choisie (
+          1 à 5 ans) et durant laquelle il règle une somme par mois calculée selon le prix total de l' instrument.
+             
+      </div>
+    </div>
+    <hr>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <h3><b>Mission</b></h3>
+      </div>
+  
+      <div class="w3-container">
+        <p>  Mon projet durant ces 5 semaines était principalement de rajouter une condition
+          supplémentaire à l'utilisateur lui permettant de modifier son contrat à tout moment.
+          <br> <br>
+          Tout au long de mon projet, Monsieur Moquet m’a aidé dans la programmation de mes
+          fonctions. Il m’a formé à l’utilisation de woocommerce et de ses plugins comme wpform.
+          Il a également créé un site de test ou j’ai inclus mon répertoire afin de faire toutes les
+          modifications en sécurité. <br> <br>
+          Le site Musicali repose sur un contrat mensuel pour l’accès aux instruments musicaux.
+          Monsieur Moquet m’a expliqué le calcul des prix et leur application afin de programmer
+          correctement la fonction du calcul du nouveau loyer que l’utilisateur possédera.
+          Son intervention était donc à chaque réalisation et vérifiait avec un compte client si
+          l’affichage du nouveau calcul était bon. <br> <br>
+          Ma progression s’est faite en plusieurs étapes : <br> <br>
+          - initiation à woocommerce afin de savoir créer des comptes clients pour les tests,
+          créer des variables ACF pour stocker les valeurs ou encore la création d’une page
+          de formulaire à l’aide de woocommerce avant d’abandonner cette idée. <br> 
+           - utilisation de filezilla et de ses répertoires pour modifier la page du formulaire et celle
+          du contrat. <br> 
+           - calcul de la fonction coût de l’instrument et de la future mensualité afin de l’afficher
+          correctement dans la liste déroulante du formulaire. <br>
+           - récupération de toutes les données dans le mail, les données du site sur le contrat
+          (grâce aux variables ACF) et sur l’accueil du contrat de l’utilisateur. <br> <br>
+          Malgré tout, l'objectif demandé par monsieur Moquet à été réalisé parfaitement dans le
+          délai. <br> </p>
+      
+      </div>
+    </div>
+    <hr>
+  
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <h3><b>Conclusion</b></h3>
+      </div>
+      <div class="w3-container">
+        <p> 
+          Les nouveaux utilisateurs pourront donc profiter de l'ajout du bouton permettant la
+          modification de leur contrat afin de faciliter le travail de monsieur Moquet et Monsieur
+          Rocher. </p>
+        <div class="w3-row">
+          <div class="w3-col m8 s12">
+            <p></p>          </div>
+        </div>
+      </div>
+    </div>
+  <!-- END BLOG ENTRIES -->
+  </div>
 
+  <div id="lirePlus" class="w3-modal w3-large">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black w3-display-container">
+        <span onclick="document.getElementById('lirePlus').style.display='none'" class="w3-button w3-display-topright w3-xlarge">x</span>
+        <h1>Informations supplémentaires</h1>
+      </div>
+   <br> <br>
+   
+    </div>
+  </div>
 
+  
+  
+  <!-- Introduction menu -->
+  <div class="w3-col l4">
+    <!-- About Card -->
+    <div class="w3-card w3-margin w3-margin-top">
+      <div class="w3-container w3-white">
+        <h4><b>A propos de moi</b></h4>
+        <p><button onclick='window.location.href="./index.html";' class="w3-button w3-padding-large w3-white w3-border">Voir mon CV »</button></p>        
+      </div>
+    </div><hr>
+    <!-- Posts -->
+    <div  class="w3-card w3-margin">
+      <div  class="w3-container w3-padding">
+        <h4>A propos de l'entreprise</h4>
+      </div>
+      <ul class="w3-ul w3-hoverable w3-white">
 
+        <li  onclick='window.location.href="https://www.roomba.io/";' class="w3-padding-16">
+          <img src="./Ressources/Roombâ.png" alt="Image" class="w3-left w3-margin-right" style="width:90px">
+          <span class="w3-large">L'entreprise</span><br>
+        </li>
+
+        <li onclick='window.location.href="./Ressources/Synthèse de stage2.pdf";' class="w3-padding-16 w3-hide-medium w3-hide-small">
+          <img src="./Ressources/roomba-mairie.jpg" alt="Image" class="w3-left w3-margin-right" style="width:40px">
+          <span class="w3-large">Mon rapport complet</span><br>
+        </li>  
+      </ul>
+    </div>
+    <hr> 
+
+    <!-- Labels / tags -->
+    <div class="w3-card w3-margin">
+      <div class="w3-container w3-padding">
+        <h4>Tags</h4>
+      </div>
+      <div class="w3-container w3-white">
+      <p> <span  onclick='window.location.href="https://www.google.com/search?q=%23location&rlz=1C1VDKB_frFR963FR963&oq=%23location&aqs=chrome..69i57j46i19j0i19j0i19i30l2j0i19i30i457j0i402l2j0i19i30.2130j0j7&sourceid=chrome&ie=UTF-8";' class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-button">location</span>
+         <span  onclick='window.location.href="https://www.google.com/search?q=%23salles+%C3%A9v%C3%A9nementielles&rlz=1C1VDKB_frFR963FR963&sxsrf=APq-WBuT5WGk0C33NnxwN1jNtNMKbFi7sw%3A1644145959938&ei=J63_YbnQONGmaKqAnrgF&ved=0ahUKEwj5_5n_-Or1AhVRExoKHSqAB1cQ4dUDCA4&uact=5&oq=%23salles+%C3%A9v%C3%A9nementielles&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoKCAAQRxCwAxDJAzoICAAQkgMQsAM6BwgAEEcQsAM6BAgjECc6BQguEMsBOgUIABDLAToECAAQHjoHCAAQyQMQHjoFCAAQkgM6BQgAEIAEOggIABDJAxDLAToFCC4QgAQ6BAgAEAM6BwgAEAMQiwM6CAguEIAEEIsDOggILhCABBCxAzoLCAAQgAQQsQMQiwNKBAhBGABKBAhGGABQ2QRYtRBgzhloAXACeACAAYwBiAGmCJIBAzAuOZgBAKABAaABAsgBCrgBAsABAQ&sclient=gws-wiz";' class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-button">salles événementielles</span>
+        <span onclick='window.location.href="https://www.google.com/search?q=%23mairie&rlz=1C1VDKB_frFR963FR963&sxsrf=APq-WBv-4uFh5xgZI322lZZZdslJLekKJA%3A1644146172979&ei=_K3_Yf2iO86Eur4P0O2XoAg&ved=0ahUKEwj9kOXk-er1AhVOgs4BHdD2BYQQ4dUDCA4&uact=5&oq=%23mairie&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyAggmMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeMgQIABAeOgcIABBHELADOgYIABAWEB5KBAhBGABKBAhGGABQtgRY8gpgvAxoAXACeACAAYABiAHOBpIBAzAuN5gBAKABAcgBCMABAQ&sclient=gws-wiz";' class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-button">mairie</span>
+        <span onclick='window.location.href="https://www.google.com/search?q=%23Station+F&rlz=1C1VDKB_frFR963FR963&oq=%23Station+F&aqs=chrome..69i57j0i22i30l9.5326j0j7&sourceid=chrome&ie=UTF-8";' class="w3-tag w3-light-grey w3-small w3-margin-bottom w3-button">station F</span>
+      </p>
+      </div>
+    </div>
+    
+  <!-- END Introduction Menu -->
+  </div>
+  
+  <!-- END GRID -->
+  </div><br>
+  
+  <!-- END w3-content -->
+  </div>
+  
     <!-- Footer -->
     <footer style="bottom:0; display:inline-block;vertical-align:top; margin-left: 800px; " class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-      <p class="w3-medium">Produit par Melvin</p>
+      <p class="w3-large">Produit par Melvin</p>
     </footer>
 
 </body>

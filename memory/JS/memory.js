@@ -3,7 +3,7 @@ function ChangerDifficulte(){
     var totalCoup=0;
     document.getElementById('jeu').innerHTML = "";//Remet le jeu à 0 (cartes, musique et nombre de coups)
     document.getElementById("totalCoup").value=totalCoup ;//Met la valeur de la variable totalCoup dans l'ID totalCoup
-    document.getElementById("audio").play();//Lancer l'OST de dragon ball
+   // document.getElementById("audio").play();//Lancer l'OST de dragon ball
 
   if($(this).val()=='Facile'){
     
